@@ -24,7 +24,6 @@
 
 #include <xc.h>
 #include <math.h>
-#include <stdio.h>
 
 
 #define _XTAL_FREQ 4000000
@@ -222,6 +221,7 @@ int main()
                 cmd(0x01);
                 cmd(0x80);
                 float_LCD(total);
+                show("Vrms = ");
                 show(cadena);
                 c2 = 0;
             }
@@ -229,7 +229,8 @@ int main()
                 cmd(0x01);
                 cmd(0x80);
                 prom_1 = prom_1/30;
-                float_LCD(total);
+                float_LCD(prom_1);
+                show("Vrms = ");
                 show(cadena);
                 c2 = 0;
             }
