@@ -11,6 +11,9 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 1 2 1
 $dist/default/production\IDIE_01.X.production.o
 cinit CODE 0 7E7 7E7 19 2 1
 text1 CODE 0 BC BC 1D6 2 1
@@ -38,9 +41,6 @@ cstackBANK1 BANK1 1 A0 A0 4B 1 1
 bssBANK1 BANK1 1 EB EB 2 1 1
 bssBANK3 BANK3 1 190 190 F 1 1
 strings STRING 0 1000 1000 25 2 1
-config CONFIG 4 2007 2007 1 2 1
-$C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
-end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -89,32 +89,32 @@ STRING 1800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\IDIE_01.X.production.o
-7E7 cinit CODE >466:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7E7 cinit CODE >469:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7E7 cinit CODE >486:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7E8 cinit CODE >487:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7E9 cinit CODE >488:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7EA cinit CODE >489:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7EB cinit CODE >492:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7EC cinit CODE >493:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7ED cinit CODE >494:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7EE cinit CODE >495:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7EF cinit CODE >496:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F0 cinit CODE >497:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F1 cinit CODE >498:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F2 cinit CODE >499:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F3 cinit CODE >500:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F4 cinit CODE >501:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F5 cinit CODE >502:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F6 cinit CODE >503:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F7 cinit CODE >504:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F8 cinit CODE >505:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7F9 cinit CODE >506:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7FA cinit CODE >507:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7FB cinit CODE >508:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7FC cinit CODE >514:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7FC cinit CODE >516:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
-7FD cinit CODE >517:C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_1.s
+7E7 cinit CODE >466:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7E7 cinit CODE >469:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7E7 cinit CODE >486:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7E8 cinit CODE >487:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7E9 cinit CODE >488:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7EA cinit CODE >489:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7EB cinit CODE >492:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7EC cinit CODE >493:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7ED cinit CODE >494:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7EE cinit CODE >495:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7EF cinit CODE >496:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F0 cinit CODE >497:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F1 cinit CODE >498:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F2 cinit CODE >499:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F3 cinit CODE >500:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F4 cinit CODE >501:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F5 cinit CODE >502:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F6 cinit CODE >503:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F7 cinit CODE >504:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F8 cinit CODE >505:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7F9 cinit CODE >506:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7FA cinit CODE >507:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7FB cinit CODE >508:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7FC cinit CODE >514:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7FC cinit CODE >516:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
+7FD cinit CODE >517:C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_1.s
 800 text18 CODE >146:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 800 text18 CODE >148:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 803 text18 CODE >149:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
@@ -124,15 +124,15 @@ $dist/default/production\IDIE_01.X.production.o
 1477 text17 CODE >109:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 147C text17 CODE >109:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 1483 text17 CODE >110:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-1538 text16 CODE >158:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-1538 text16 CODE >160:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-153D text16 CODE >160:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-1541 text16 CODE >160:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-154B text16 CODE >162:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-1554 text16 CODE >164:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-1557 text16 CODE >165:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-155B text16 CODE >168:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-1561 text16 CODE >169:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+1538 text16 CODE >153:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+1538 text16 CODE >155:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+153D text16 CODE >155:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+1541 text16 CODE >155:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+154B text16 CODE >157:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+1554 text16 CODE >159:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+1557 text16 CODE >160:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+155B text16 CODE >163:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+1561 text16 CODE >164:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 808 text15 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awdiv.c
 808 text15 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awdiv.c
 809 text15 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awdiv.c
@@ -907,74 +907,74 @@ F8 text1 CODE >50:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sp
 285 text1 CODE >130:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcsqrt.c
 289 text1 CODE >131:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcsqrt.c
 291 text1 CODE >159:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcsqrt.c
-292 maintext CODE >172:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-292 maintext CODE >174:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-292 maintext CODE >176:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-295 maintext CODE >177:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-296 maintext CODE >178:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-299 maintext CODE >181:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-29E maintext CODE >182:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2A1 maintext CODE >183:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2A3 maintext CODE >185:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2AB maintext CODE >186:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2AB maintext CODE >187:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2B3 maintext CODE >188:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2B3 maintext CODE >190:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2BB maintext CODE >191:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2BB maintext CODE >192:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2C3 maintext CODE >193:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2C3 maintext CODE >195:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2C8 maintext CODE >196:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2CE maintext CODE >197:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2D7 maintext CODE >200:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2DE maintext CODE >203:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-2EC maintext CODE >204:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-35C maintext CODE >205:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-3E6 maintext CODE >206:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-405 maintext CODE >208:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-414 maintext CODE >209:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-484 maintext CODE >210:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-50E maintext CODE >211:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-52D maintext CODE >213:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-531 maintext CODE >217:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-537 maintext CODE >218:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-538 maintext CODE >219:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-538 maintext CODE >220:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-538 maintext CODE >222:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-577 maintext CODE >223:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-5B7 maintext CODE >224:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-5D6 maintext CODE >226:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-615 maintext CODE >227:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-655 maintext CODE >228:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-674 maintext CODE >229:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-67A maintext CODE >230:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-680 maintext CODE >231:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-686 maintext CODE >232:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-695 maintext CODE >233:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-69E maintext CODE >234:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6A7 maintext CODE >235:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6B6 maintext CODE >236:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6BC maintext CODE >237:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6C5 maintext CODE >238:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6CE maintext CODE >239:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6D1 maintext CODE >240:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6E1 maintext CODE >242:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6E7 maintext CODE >243:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6ED maintext CODE >244:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-6F3 maintext CODE >245:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-732 maintext CODE >246:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-73F maintext CODE >247:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-748 maintext CODE >248:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-751 maintext CODE >249:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-790 maintext CODE >250:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-79D maintext CODE >251:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-7A3 maintext CODE >252:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-7AC maintext CODE >253:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-7B5 maintext CODE >254:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-7B8 maintext CODE >255:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-7C8 maintext CODE >257:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-7CC maintext CODE >258:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-7DC maintext CODE >259:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+292 maintext CODE >167:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+292 maintext CODE >169:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+292 maintext CODE >171:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+295 maintext CODE >172:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+296 maintext CODE >173:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+299 maintext CODE >176:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+29E maintext CODE >177:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2A1 maintext CODE >178:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2A3 maintext CODE >180:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2AB maintext CODE >181:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2AB maintext CODE >182:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2B3 maintext CODE >183:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2B3 maintext CODE >185:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2BB maintext CODE >186:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2BB maintext CODE >187:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2C3 maintext CODE >188:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2C3 maintext CODE >190:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2C8 maintext CODE >191:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2CE maintext CODE >192:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2D7 maintext CODE >195:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2DE maintext CODE >198:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+2EC maintext CODE >199:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+35C maintext CODE >200:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+3E6 maintext CODE >201:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+405 maintext CODE >203:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+414 maintext CODE >204:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+484 maintext CODE >205:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+50E maintext CODE >206:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+52D maintext CODE >208:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+531 maintext CODE >212:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+537 maintext CODE >213:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+538 maintext CODE >214:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+538 maintext CODE >215:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+538 maintext CODE >217:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+577 maintext CODE >218:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+5B7 maintext CODE >219:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+5D6 maintext CODE >221:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+615 maintext CODE >222:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+655 maintext CODE >223:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+674 maintext CODE >224:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+67A maintext CODE >225:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+680 maintext CODE >226:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+686 maintext CODE >227:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+695 maintext CODE >228:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+69E maintext CODE >229:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6A7 maintext CODE >230:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6B6 maintext CODE >231:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6BC maintext CODE >232:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6C5 maintext CODE >233:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6CE maintext CODE >234:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6D1 maintext CODE >235:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6E1 maintext CODE >237:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6E7 maintext CODE >238:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6ED maintext CODE >239:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+6F3 maintext CODE >240:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+732 maintext CODE >241:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+73F maintext CODE >242:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+748 maintext CODE >243:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+751 maintext CODE >244:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+790 maintext CODE >245:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+79D maintext CODE >246:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+7A3 maintext CODE >247:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+7AC maintext CODE >248:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+7B5 maintext CODE >249:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+7B8 maintext CODE >250:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+7C8 maintext CODE >252:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+7CC maintext CODE >253:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
+7DC maintext CODE >254:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1004,14 +1004,14 @@ _GO FA 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 __L__absolute__ 0 0 ABS 0 __absolute__ -
 delay@cnt 70 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
+___sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
 _main 524 0 CODE 0 maintext dist/default/production\IDIE_01.X.production.o
 _show 29D6 0 CODE 0 text2 dist/default/production\IDIE_01.X.production.o
 _sqrt 178 0 CODE 0 text1 dist/default/production\IDIE_01.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 cmd@a 72 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 dat@b 72 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
-start 0 0 CODE 0 init C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
 ___flmul@aexp 47 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 ___flmul@bexp 48 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 ___flmul@prod 49 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
@@ -1023,12 +1023,12 @@ show@s 73 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 sqrt@a 70 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 sqrt@i 21 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 sqrt@p 26 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
 sqrt@tfrac 22 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -1044,6 +1044,7 @@ __Lmaintext 0 0 ABS 0 maintext -
 ___fldiv@aexp 68 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 ___fldiv@bexp 67 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 ___fldiv@sign 60 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
+_ADC_Init 1000 0 CODE 0 text18 dist/default/production\IDIE_01.X.production.o
 _ADC_Read 2A70 0 CODE 0 text16 dist/default/production\IDIE_01.X.production.o
 ___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 _GO_DONE FA 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
@@ -1055,9 +1056,10 @@ __end_of___flmul 2000 0 CODE 0 text12 dist/default/production\IDIE_01.X.producti
 __end_of___flsub 29D6 0 CODE 0 text10 dist/default/production\IDIE_01.X.production.o
 __end_of___fltol 2C62 0 CODE 0 text9 dist/default/production\IDIE_01.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
+__end_of_ADC_Init 1010 0 CODE 0 text18 dist/default/production\IDIE_01.X.production.o
 __end_of_ADC_Read 2AC4 0 CODE 0 text16 dist/default/production\IDIE_01.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
+___stackhi 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
 ___fladd@a A4 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.production.o
 ___fladd@b A0 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.production.o
 ___fldiv@a 4F 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
@@ -1072,7 +1074,7 @@ __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.produc
 _TRISC0 438 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 _TRISC1 439 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 _TRISC2 43A 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
+___int_sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1093,7 +1095,6 @@ __Lbank2 0 0 ABS 0 bank2 -
 __Lbank3 0 0 ABS 0 bank3 -
 __Lcinit FCE 0 CODE 0 cinit -
 __Lstack 0 0 STACK 2 stack -
-_ADC_Init_CH0 1000 0 CODE 0 text18 dist/default/production\IDIE_01.X.production.o
 ___flmul@grs 43 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
@@ -1131,7 +1132,7 @@ _lcd_init 295C 0 CODE 0 text4 dist/default/production\IDIE_01.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 float_LCD@i C1 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.production.o
 __stringtab 2000 0 STRING 0 strings dist/default/production\IDIE_01.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Usuario\AppData\Local\Temp\xcAsb54.\driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Usuario\AppData\Local\Temp\xcAs9ac.\driver_tmp_12.o
 __end_of___xxtofl 178 0 CODE 0 text8 dist/default/production\IDIE_01.X.production.o
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
 __LbssBANK3 0 0 ABS 0 bssBANK3 -
@@ -1146,7 +1147,6 @@ __ptext15 1010 0 CODE 0 text15 dist/default/production\IDIE_01.X.production.o
 __ptext16 2A70 0 CODE 0 text16 dist/default/production\IDIE_01.X.production.o
 __ptext17 28EA 0 CODE 0 text17 dist/default/production\IDIE_01.X.production.o
 __ptext18 1000 0 CODE 0 text18 dist/default/production\IDIE_01.X.production.o
-__end_of_ADC_Init_CH0 1010 0 CODE 0 text18 dist/default/production\IDIE_01.X.production.o
 ___awdiv 1010 0 CODE 0 text15 dist/default/production\IDIE_01.X.production.o
 ___fladd 138A 0 CODE 0 text11 dist/default/production\IDIE_01.X.production.o
 ___fldiv 2C62 0 CODE 0 text14 dist/default/production\IDIE_01.X.production.o
@@ -1238,7 +1238,7 @@ _PORTB 6 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 __end_of_num_s 2B42 0 CODE 0 text7 dist/default/production\IDIE_01.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
-_main$776 C4 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.production.o
+_main$772 C4 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 _delay 28EA 0 CODE 0 text17 dist/default/production\IDIE_01.X.production.o

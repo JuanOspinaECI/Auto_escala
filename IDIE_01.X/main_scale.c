@@ -143,17 +143,12 @@ void show(unsigned char *s)
     }
 }
 
-void ADC_Init_CH0()
+void ADC_Init()
  {
    ADCON0=0x00;  // sampling freq=osc_freq/2,ADC off initially
    ADCON1=(1<<SBIT_ADFM);  // All pins are configured as Analog pins and ADC result is right justified  
 }
 
-void ADC_Init_CH1()
- {
-   ADCON0=0x08;  // Enable chanel 2
-   ADCON1=(1<<SBIT_ADFM);  // All pins are configured as Analog pins and ADC result is right justified  
-}
 
 int ADC_Read(int adcChannel)
  {  
@@ -178,7 +173,7 @@ int main()
     TRISC0=TRISC1=TRISC2=0;
     
 
-    ADC_Init_CH0();             //Initialize the ADC module
+    ADC_Init();             //Initialize the ADC module
     char count = 0;
     char c2 = 31;
     //channel 0 variables
@@ -205,7 +200,7 @@ int main()
         val_ch0 = val_ch0*val_ch0*0.000416;
         suma_ch0 += val_ch0;
         
-        adcValue = ADC_Read(1);       // Read the ADC value of channel zero
+        adcValue = ADC_Read(1);       // Read the ADC value of channel one
         val_ch1 = (((float)adcValue*5/1024)-2.5);
         val_ch1 = val_ch1*val_ch1*0.000416;
         suma_ch1 += val_ch1;
