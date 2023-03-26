@@ -1,6 +1,6 @@
 /*
  * File:   led_main.c
- * Author: Usuario
+ * Author: 
  *
  * Created on March 20, 2023, 12:18 AM
  */
@@ -25,8 +25,8 @@
 #include <xc.h>
 #include <math.h>
 #include <stdio.h>
-//#include "math24f.h"
-//#include "math24lb.h"
+
+
 #define _XTAL_FREQ 4000000
 #define SBIT_ADON     0
 #define SBIT_CHS0     3
@@ -35,12 +35,20 @@
 #define rw RC1
 #define en RC2
 
-char cadena[15];
+//Global variables
+char cadena[15]; //Variable for conversion float to string
 
+
+//Functions
+unsigned char num_s(int val, char flag);
+void float_LCD(float value);
+void delay(int cnt);
 void lcd_init();
 void cmd(unsigned char a);
 void dat(unsigned char b);
 void show(unsigned char *s);
+void ADC_Init();
+int ADC_Read(int adcChannel);
 
 unsigned char num_s(int val, char flag){
     switch(val){
@@ -79,41 +87,22 @@ unsigned char num_s(int val, char flag){
 
 void float_LCD(float value){
     char flag = 0;
-    int v_temp;
-    v_temp = (int)(value/1000);
-    cadena[0] = num_s(v_temp,flag);
-    if(v_temp != 0){flag = 1;}
-    value -= (float)v_temp*1000;
-    
-    v_temp = (int)(value/100);
-    cadena[1] = num_s(v_temp,flag);
-    if(v_temp != 0){flag = 1;}
-    value -= (float)v_temp*100;
-    
-    v_temp = (int)(value/10);
-    cadena[2] = num_s(v_temp,flag);
-    if(v_temp != 0){flag = 1;}
-    value -= (float)v_temp*10;
-    
-    v_temp = (int)(value);
-    cadena[3] = num_s(v_temp,1);
-    value -= (float)v_temp;
-    
-    cadena[4] = '.';
-    value = value *1000;
-    
-    v_temp = (int)(value/100);
-    cadena[5] = num_s(v_temp,1);
-    value -= (float)v_temp*100;
-    
-    v_temp = (int)(value/10);
-    if (v_temp > 9){return;}
-    cadena[6] = num_s(v_temp,1);
-    value -= (float)v_temp*10;
-    
-    v_temp = (int)(value);
-    cadena[7] = num_s(v_temp,1);
-    value -= (float)v_temp;
+    int v_temp =0;
+    int pow_10 = 1000;
+    for (int i = 0; i<8; i++){
+        if(i == 4)
+        {
+            cadena[4] = '.';
+            value = value *1000;
+            pow_10 = 100;
+            continue;
+        }
+        v_temp = (int)(value/pow_10);
+        cadena[i] = num_s(v_temp,flag);
+        if(v_temp != 0){flag = 1;}
+        value = value - ((float)v_temp*pow_10);
+        pow_10 = pow_10/10;
+    }
 }
 
 void delay(int cnt)
