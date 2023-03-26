@@ -143,12 +143,17 @@ void show(unsigned char *s)
     }
 }
 
-void ADC_Init()
+void ADC_Init_CH0()
  {
    ADCON0=0x00;  // sampling freq=osc_freq/2,ADC off initially
    ADCON1=(1<<SBIT_ADFM);  // All pins are configured as Analog pins and ADC result is right justified  
 }
 
+void ADC_Init_CH1()
+ {
+   ADCON0=0x08;  // Enable chanel 2
+   ADCON1=(1<<SBIT_ADFM);  // All pins are configured as Analog pins and ADC result is right justified  
+}
 
 int ADC_Read(int adcChannel)
  {  
@@ -173,14 +178,19 @@ int main()
     TRISC0=TRISC1=TRISC2=0;
     
 
-    ADC_Init();             //Initialize the ADC module
+    ADC_Init_CH0();             //Initialize the ADC module
     char count = 0;
     char c2 = 31;
-    float suma = 0;
-    float val=0;
-    int m = 1;
-    float prom_1;
-    float total = 0;
+    //channel 0 variables
+    float suma_ch0 = 0;
+    float val_ch0 =0;
+    float prom_ch0 = 0;
+    float total_ch0 = 0;
+    //Channel 1 variables
+    float suma_ch1 = 0;
+    float val_ch1 =0;
+    float prom_ch1 = 0;
+    float total_ch1 = 0;
     unsigned int i;
     lcd_init();
     cmd(0x8A); //forcing the cursor at 0x8A position
@@ -188,54 +198,64 @@ int main()
     while(1)
     {
         __delay_ms(0.416);
-        //cmd(0x18);
-        //cmd(0x01);
-        //cmd(0x80);
-        //float a = 1010.999;
-        //sprintf(c, "%f", a);
-        //float_LCD(a);
-        //show(cadena);
+        
+        //ADC_Init_CH0();
         adcValue = ADC_Read(0);       // Read the ADC value of channel zero
+        val_ch0 = (((float)adcValue*5/1024)-2.5);
+        val_ch0 = val_ch0*val_ch0*0.000416;
+        suma_ch0 += val_ch0;
+        
+        adcValue = ADC_Read(1);       // Read the ADC value of channel zero
+        val_ch1 = (((float)adcValue*5/1024)-2.5);
+        val_ch1 = val_ch1*val_ch1*0.000416;
+        suma_ch1 += val_ch1;
+        
         count++;
-        //for (int j = 0; j<10; j++){
-        //        int temp = adcValue & m;
-        //        m = m*2;
-        //        val += temp;
-        //    }
-        val = (((float)adcValue*5/1024)-2.5);
-        val = val*val*0.000416;
-        //float_LCD(adcValue*5/1024);
-        //float_LCD(val);
-        //show(cadena);
-        suma += val;
+        //ADC_Init_CH1();
+        
         
         if (count == 40){
             count = 0;
-            val = 0;
-            m = 1;
+            val_ch0 = 0;
+            val_ch1 = 0;
             
-            total = suma*60;
-            total = sqrt(total)*70.71;
-            prom_1 += total;
+            total_ch0 = suma_ch0*60;
+            total_ch0 = sqrt(total_ch0)*70.71;
+            prom_ch0 += total_ch0;
+            
+            total_ch1 = suma_ch1*60;
+            total_ch1 = sqrt(total_ch1)*70.71;
+            prom_ch1 += total_ch1;
             if(c2 == 31){
                 cmd(0x01);
                 cmd(0x80);
-                float_LCD(total);
+                float_LCD(total_ch0);
                 show("Vrms = ");
                 show(cadena);
+                float_LCD(total_ch1);
+                cmd(0xC0);
+                show("Irms = ");
+                show(cadena);
                 c2 = 0;
+                prom_ch0 = prom_ch1 = 0;
             }
             if (c2 == 30 ){
                 cmd(0x01);
                 cmd(0x80);
-                prom_1 = prom_1/30;
-                float_LCD(prom_1);
+                prom_ch0 = prom_ch0/30;
+                float_LCD(prom_ch0);
                 show("Vrms = ");
                 show(cadena);
+                prom_ch1 = prom_ch1/30;
+                float_LCD(prom_ch1);
+                cmd(0xC0);
+                show("Irms = ");
+                show(cadena);
                 c2 = 0;
+                prom_ch0 = prom_ch1 = 0;
             }
             c2++;
-            suma = 0;    
+            suma_ch0 = suma_ch1 = 0;
             __delay_ms(0.0266666);
         }
         
