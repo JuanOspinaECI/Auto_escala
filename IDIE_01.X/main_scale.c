@@ -143,9 +143,14 @@ void show(unsigned char *s)
     }
 }
 
-void ADC_Init()
+void ADC_Init_CH0()
  {
    ADCON0=0x00;  // sampling freq=osc_freq/2,ADC off initially
+   ADCON1=(1<<SBIT_ADFM);  // All pins are configured as Analog pins and ADC result is right justified  
+}
+void ADC_Init_CH1()
+ {
+   ADCON0=0x08;  // sampling freq=osc_freq/2,ADC off initially
    ADCON1=(1<<SBIT_ADFM);  // All pins are configured as Analog pins and ADC result is right justified  
 }
 
@@ -153,6 +158,24 @@ void ADC_Init()
 int ADC_Read(int adcChannel)
  {  
     ADCON0 = (1<<SBIT_ADON) | (adcChannel<SBIT_CHS0);  //select required channel and turn ON adc
+    //#define SBIT_ADON     0
+    //#define SBIT_CHS0     3
+    //#define SBIT_ADFM     7
+
+    delay(1000);                   //Acquisition Time(Wait for Charge Hold Capacitor to get charged )
+   
+    GO=1;                           // Start ADC conversion
+    while(GO_DONE==1);              // Wait for the conversion to complete
+                                    // GO_DONE bit will be cleared once conversion is complete
+
+    return((ADRESH<<8) + ADRESL);   // return right justified 10-bit result
+ }
+int ADC_Read_1(int adcChannel)
+ {  
+    ADCON0 = 0x09;//(1<<SBIT_ADON) | (adcChannel<SBIT_CHS0);  //select required channel and turn ON adc
+    //#define SBIT_ADON     0
+    //#define SBIT_CHS0     3
+    //#define SBIT_ADFM     7
 
     delay(1000);                   //Acquisition Time(Wait for Charge Hold Capacitor to get charged )
    
@@ -173,7 +196,7 @@ int main()
     TRISC4 = 0;//=TRISC1=TRISC2=0;
     
 
-    ADC_Init();             //Initialize the ADC module
+    ADC_Init_CH0();             //Initialize the ADC module
     char count = 0;
     char c2 = 31;
     //channel 0 variables
@@ -194,13 +217,14 @@ int main()
     {
         __delay_ms(0.416);
         
-        //ADC_Init_CH0();
+        ADC_Init_CH0();
         adcValue = ADC_Read(0);       // Read the ADC value of channel zero
         val_ch0 = (((float)adcValue*5/1024)-2.5);
         val_ch0 = val_ch0*val_ch0*0.000416;
         suma_ch0 += val_ch0;
         
-        adcValue = ADC_Read(1);       // Read the ADC value of channel one
+        ADC_Init_CH1();
+        adcValue = ADC_Read_1(0);       // Read the ADC value of channel one
         val_ch1 = (((float)adcValue*5/1024)-2.5);
         val_ch1 = val_ch1*val_ch1*0.000416;
         suma_ch1 += val_ch1;
