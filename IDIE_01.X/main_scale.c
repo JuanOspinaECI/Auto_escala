@@ -30,9 +30,9 @@
 #define SBIT_ADON     0
 #define SBIT_CHS0     3
 #define SBIT_ADFM     7
-#define rs RC0
-#define rw RC1
-#define en RC2
+#define rs RD2
+#define rw RD3
+#define en RC4
 
 //Global variables
 char cadena[15]; //Variable for conversion float to string
