@@ -170,7 +170,7 @@ int main()
     
     TRISB = 0x00; // Configure PORTB and PORTD as output to display the ADC values on LEDs
     TRISD = 0x00;
-    TRISC0=TRISC1=TRISC2=0;
+    TRISC4 = 0;//=TRISC1=TRISC2=0;
     
 
     ADC_Init();             //Initialize the ADC module
