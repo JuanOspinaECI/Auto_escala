@@ -122,7 +122,7 @@ void cmd(unsigned char a)
     rs=0;
     rw=0;
     en=1;
-    delay(1000);
+    __delay_ms(1);
     en=0;
 }
 
@@ -132,7 +132,7 @@ void dat(unsigned char b)
     rs=1;
     rw=0;
     en=1;
-    delay(1000);
+    __delay_ms(1);
     en=0;
 }
 
@@ -189,96 +189,87 @@ int ADC_Read_1(int adcChannel)
 
 int main()
 {
-    int adcValue=0;
+    //int adcValue=0;
     
     TRISB = 0x00; // Configure PORTB and PORTD as output to display the ADC values on LEDs
     TRISD = 0x00;
     TRISC4 = 0;//=TRISC1=TRISC2=0;
+    TRISC3 = 0;
     
 
     ADC_Init_CH0();             //Initialize the ADC module
-    char count = 0;
-    char c2 = 31;
     //channel 0 variables
     float suma_ch0 = 0;
     float val_ch0 =0;
-    float prom_ch0 = 0;
     float total_ch0 = 0;
     //Channel 1 variables
     float suma_ch1 = 0;
     float val_ch1 =0;
-    float prom_ch1 = 0;
     float total_ch1 = 0;
-    unsigned int i;
+    unsigned int array_ch0 [40];
+    unsigned int array_ch1 [40];
+    float offset;
+    unsigned int max;
+    unsigned int min;
+    //unsigned int i;
     lcd_init();
     cmd(0x8A); //forcing the cursor at 0x8A position
     show("IDIE");
     while(1)
     {
-        __delay_ms(0.416);
-        
         ADC_Init_CH0();
-        adcValue = ADC_Read(0);       // Read the ADC value of channel zero
-        val_ch0 = (((float)adcValue*5/1024)-2.5);
-        val_ch0 = val_ch0*val_ch0*0.000416;
-        suma_ch0 += val_ch0;
-        
-        ADC_Init_CH1();
-        adcValue = ADC_Read_1(0);       // Read the ADC value of channel one
-        val_ch1 = (((float)adcValue*5/1024)-2.5);
-        val_ch1 = val_ch1*val_ch1*0.000416;
-        suma_ch1 += val_ch1;
-        
-        count++;
-        //ADC_Init_CH1();
-        
-        
-        if (count == 40){
-            count = 0;
-            val_ch0 = 0;
-            val_ch1 = 0;
-            
-            total_ch0 = suma_ch0*60;
-            total_ch0 = sqrt(total_ch0)*70.71;
-            prom_ch0 += total_ch0;
-            
-            total_ch1 = suma_ch1*60;
-            total_ch1 = sqrt(total_ch1)*70.71;
-            prom_ch1 += total_ch1;
-            if(c2 == 31){
-                cmd(0x01);
-                cmd(0x80);
-                float_LCD(total_ch0);
-                show("Vrms = ");
-                show(cadena);
-                float_LCD(total_ch1);
-                cmd(0xC0);
-                show("Irms = ");
-                show(cadena);
-                c2 = 0;
-                prom_ch0 = prom_ch1 = 0;
-            }
-            if (c2 == 30 ){
-                cmd(0x01);
-                cmd(0x80);
-                prom_ch0 = prom_ch0/30;
-                float_LCD(prom_ch0);
-                show("Vrms = ");
-                show(cadena);
-                prom_ch1 = prom_ch1/30;
-                float_LCD(prom_ch1);
-                cmd(0xC0);
-                show("Irms = ");
-                show(cadena);
-                c2 = 0;
-                prom_ch0 = prom_ch1 = 0;
-            }
-            c2++;
-            suma_ch0 = suma_ch1 = 0;
-            __delay_ms(0.0266666);
+        for(int i = 0; i<40; i++){
+            array_ch0[i] = ADC_Read(0);
+            __delay_ms(0.416666);
         }
+        ADC_Init_CH1();
+        for(int i = 0; i<40; i++){
+            array_ch1[i] = ADC_Read_1(0);
+            __delay_ms(0.416666);
+        }
+        max = array_ch0[0];
+        min = array_ch0[0];
+        for(int i = 0; i<40; i++){
+            if(array_ch0[i]>max){max = array_ch0[i];}
+            if(array_ch0[i]<min){min = array_ch0[i];}
+        }
+        unsigned int offset_0 = (max+min);
+        max = array_ch1[0];
+        min = array_ch1[0];
+        for(int i = 0; i<40; i++){
+            if(array_ch1[i]>max){max = array_ch1[i];}
+            if(array_ch1[i]<min){min = array_ch1[i];}
+        }
+        unsigned int offset_1 = (max+min);
+        suma_ch0 = 0;
+        suma_ch1 = 0;
+        for(int i = 0; i<40; i++){
+            val_ch0 = (((float)array_ch0[i]-(offset_0/2))*5/1024);
+            val_ch0 = val_ch0*val_ch0*0.000416666;
+            suma_ch0 += val_ch0;
+            val_ch1 = (((float)array_ch1[i]-(offset_1/2))*5/1024);
+            val_ch1 = val_ch1*val_ch1*0.000416666;
+            suma_ch1 += val_ch1;
+        }
+        val_ch0 = 0;
+        val_ch1 = 0;
+        total_ch0 = suma_ch0*60;
+        total_ch0 = sqrt(total_ch0);//*70.71;
+            
+        total_ch1 = suma_ch1*60;
+        total_ch1 = sqrt(total_ch1);//*70.71;
         
-        //PORTB = (adcValue & 0xff);    //Adc value displayed on LEDs connected to PORTB,PORTD
-        //PORTD = (adcValue>>8) & 0x03; // PORTB will display lower 8-bits and PORTD higher 2-bits
+        cmd(0x01);
+        cmd(0x80);
+        float_LCD(total_ch0);
+        show("Vrms = ");
+        show(cadena);
+        float_LCD(total_ch1);
+        cmd(0xC0);
+        show("Irms = ");
+        show(cadena);
+        
+        suma_ch0 = suma_ch1 = 0;
+        
     }
 }

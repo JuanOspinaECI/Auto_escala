@@ -73,6 +73,8 @@
 [v _RD2 RD2 `VEb  1 e 0 @66 ]
 "2763
 [v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2973
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
 "2976
 [v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
 "3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\errno.c
@@ -82,40 +84,52 @@
 "190
 [v _main main `(i  1 e 2 0 ]
 {
+"246
+[v main@i_109 i `i  1 a 2 86 ]
+"239
+[v main@i_107 i `i  1 a 2 94 ]
+"232
+[v main@i_105 i `i  1 a 2 92 ]
+"226
+[v main@i_103 i `i  1 a 2 80 ]
+"221
+[v main@i i `i  1 a 2 26 ]
+"243
+[v main@offset_1 offset_1 `ui  1 a 2 16 ]
+"236
+[v main@offset_0 offset_0 `ui  1 a 2 78 ]
 "210
-[v main@prom_ch1 prom_ch1 `f  1 a 4 71 ]
-"205
-[v main@prom_ch0 prom_ch0 `f  1 a 4 67 ]
+[v main@array_ch1 array_ch1 `[40]ui  1 a 80 0 ]
 "209
-[v main@val_ch1 val_ch1 `f  1 a 4 63 ]
-"204
-[v main@val_ch0 val_ch0 `f  1 a 4 59 ]
-"211
-[v main@total_ch1 total_ch1 `f  1 a 4 55 ]
-"206
-[v main@total_ch0 total_ch0 `f  1 a 4 51 ]
-"208
-[v main@suma_ch1 suma_ch1 `f  1 a 4 44 ]
+[v main@array_ch0 array_ch0 `[40]ui  1 a 80 0 ]
+"207
+[v main@val_ch1 val_ch1 `f  1 a 4 82 ]
 "203
-[v main@suma_ch0 suma_ch0 `f  1 a 4 40 ]
-"192
-[v main@adcValue adcValue `i  1 a 2 48 ]
-"201
-[v main@c2 c2 `uc  1 a 1 50 ]
-"200
-[v main@count count `uc  1 a 1 35 ]
-"284
+[v main@val_ch0 val_ch0 `f  1 a 4 92 ]
+"206
+[v main@suma_ch1 suma_ch1 `f  1 a 4 88 ]
+"202
+[v main@suma_ch0 suma_ch0 `f  1 a 4 22 ]
+"208
+[v main@total_ch1 total_ch1 `f  1 a 4 84 ]
+"204
+[v main@total_ch0 total_ch0 `f  1 a 4 18 ]
+"213
+[v main@min min `ui  1 a 2 90 ]
+"212
+[v main@max max `ui  1 a 2 88 ]
+"275
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcsqrt.c
 [v _sqrt sqrt `(d  1 e 4 0 ]
 {
 "14
 [v sqrt@frac frac `ul  1 a 4 17 ]
-[s S402 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S407 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "11
-[s S407 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S410 . 4 `l 1 i 4 0 `d 1 f 4 0 `S402 1 fAsBytes 4 0 `S407 1 fAsWords 4 0 ]
-[v sqrt@root root `S410  1 a 4 13 ]
+[s S412 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S415 . 4 `l 1 i 4 0 `d 1 f 4 0 `S407 1 fAsBytes 4 0 `S412 1 fAsWords 4 0 ]
+[v sqrt@root root `S415  1 a 4 13 ]
 "16
 [v sqrt@grs grs `ul  1 a 4 7 ]
 "15
@@ -133,7 +147,7 @@
 "139 C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 [v _show show `(v  1 e 1 0 ]
 {
-[v show@s s `*.26uc  1 p 2 3 ]
+[v show@s s `*.26uc  1 p 2 2 ]
 "144
 } 0
 "129
@@ -142,7 +156,7 @@
 [v dat@b b `uc  1 a 1 wreg ]
 [v dat@b b `uc  1 a 1 wreg ]
 "131
-[v dat@b b `uc  1 a 1 2 ]
+[v dat@b b `uc  1 a 1 1 ]
 "137
 } 0
 "111
@@ -156,22 +170,22 @@
 [v cmd@a a `uc  1 a 1 wreg ]
 [v cmd@a a `uc  1 a 1 wreg ]
 "121
-[v cmd@a a `uc  1 a 1 2 ]
+[v cmd@a a `uc  1 a 1 1 ]
 "127
 } 0
 "87
 [v _float_LCD float_LCD `(v  1 e 1 0 ]
 {
 "91
-[v float_LCD@i i `i  1 a 2 33 ]
+[v float_LCD@i i `i  1 a 2 9 ]
 "90
-[v float_LCD@pow_10 pow_10 `i  1 a 2 31 ]
+[v float_LCD@pow_10 pow_10 `i  1 a 2 7 ]
 "89
-[v float_LCD@v_temp v_temp `i  1 a 2 29 ]
+[v float_LCD@v_temp v_temp `i  1 a 2 5 ]
 "88
-[v float_LCD@flag flag `uc  1 a 1 28 ]
+[v float_LCD@flag flag `uc  1 a 1 4 ]
 "87
-[v float_LCD@value value `f  1 p 4 24 ]
+[v float_LCD@value value `f  1 p 4 0 ]
 "105
 } 0
 "52
@@ -200,30 +214,30 @@
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 78 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 77 ]
+[v ___fltol@exp1 exp1 `uc  1 a 1 77 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 76 ]
 "43
-[v ___fltol@f1 f1 `d  1 p 4 73 ]
+[v ___fltol@f1 f1 `d  1 p 4 68 ]
 "70
 } 0
 "242 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcadd.c
 [v ___flsub __flsub `(d  1 e 4 0 ]
 {
-[v ___flsub@a a `d  1 p 4 16 ]
-[v ___flsub@b b `d  1 p 4 20 ]
+[v ___flsub@a a `d  1 p 4 8 ]
+[v ___flsub@b b `d  1 p 4 12 ]
 "250
 } 0
 "10
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
-[v ___fladd@grs grs `uc  1 a 1 76 ]
+[v ___fladd@grs grs `uc  1 a 1 11 ]
 "15
-[v ___fladd@bexp bexp `uc  1 a 1 75 ]
+[v ___fladd@bexp bexp `uc  1 a 1 10 ]
 "16
-[v ___fladd@aexp aexp `uc  1 a 1 74 ]
+[v ___fladd@aexp aexp `uc  1 a 1 9 ]
 "13
-[v ___fladd@signs signs `uc  1 a 1 73 ]
+[v ___fladd@signs signs `uc  1 a 1 8 ]
 "10
 [v ___fladd@b b `d  1 p 4 0 ]
 [v ___fladd@a a `d  1 p 4 4 ]
@@ -232,26 +246,26 @@
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S402 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S407 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S407 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S410 . 4 `l 1 i 4 0 `d 1 f 4 0 `S402 1 fAsBytes 4 0 `S407 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S410  1 a 4 41 ]
+[s S412 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S415 . 4 `l 1 i 4 0 `d 1 f 4 0 `S407 1 fAsBytes 4 0 `S412 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S415  1 a 4 36 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 35 ]
-[s S479 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[v ___flmul@grs grs `ul  1 a 4 30 ]
+[s S484 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S482 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S479 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S482  1 a 2 45 ]
+[u S487 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S484 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S487  1 a 2 40 ]
 "10
-[v ___flmul@bexp bexp `uc  1 a 1 40 ]
+[v ___flmul@bexp bexp `uc  1 a 1 35 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 39 ]
+[v ___flmul@aexp aexp `uc  1 a 1 34 ]
 "9
-[v ___flmul@sign sign `uc  1 a 1 34 ]
+[v ___flmul@sign sign `uc  1 a 1 29 ]
 "8
-[v ___flmul@b b `d  1 p 4 21 ]
-[v ___flmul@a a `d  1 p 4 25 ]
+[v ___flmul@b b `d  1 p 4 16 ]
+[v ___flmul@a a `d  1 p 4 20 ]
 "205
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul8_16.c
@@ -272,20 +286,20 @@
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 {
 "21
-[v ___fldiv@grs grs `ul  1 a 4 67 ]
+[v ___fldiv@grs grs `ul  1 a 4 62 ]
 "22
-[v ___fldiv@rem rem `ul  1 a 4 60 ]
+[v ___fldiv@rem rem `ul  1 a 4 55 ]
 "20
-[v ___fldiv@new_exp new_exp `i  1 a 2 65 ]
+[v ___fldiv@new_exp new_exp `i  1 a 2 60 ]
 "19
-[v ___fldiv@aexp aexp `uc  1 a 1 72 ]
+[v ___fldiv@aexp aexp `uc  1 a 1 67 ]
 "18
-[v ___fldiv@bexp bexp `uc  1 a 1 71 ]
+[v ___fldiv@bexp bexp `uc  1 a 1 66 ]
 "16
-[v ___fldiv@sign sign `uc  1 a 1 64 ]
+[v ___fldiv@sign sign `uc  1 a 1 59 ]
 "8
-[v ___fldiv@a a `d  1 p 4 47 ]
-[v ___fldiv@b b `d  1 p 4 51 ]
+[v ___fldiv@a a `d  1 p 4 42 ]
+[v ___fldiv@b b `d  1 p 4 46 ]
 "185
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\awdiv.c
