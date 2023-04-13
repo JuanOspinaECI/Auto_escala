@@ -85,15 +85,13 @@
 [v _main main `(i  1 e 2 0 ]
 {
 "246
-[v main@i_109 i `i  1 a 2 86 ]
+[v main@i_109 i `i  1 a 2 82 ]
 "239
 [v main@i_107 i `i  1 a 2 94 ]
 "232
 [v main@i_105 i `i  1 a 2 92 ]
-"226
-[v main@i_103 i `i  1 a 2 80 ]
-"221
-[v main@i i `i  1 a 2 26 ]
+"222
+[v main@i i `i  1 a 2 80 ]
 "243
 [v main@offset_1 offset_1 `ui  1 a 2 16 ]
 "236
@@ -102,23 +100,25 @@
 [v main@array_ch1 array_ch1 `[40]ui  1 a 80 0 ]
 "209
 [v main@array_ch0 array_ch0 `[40]ui  1 a 80 0 ]
-"207
-[v main@val_ch1 val_ch1 `f  1 a 4 82 ]
-"203
-[v main@val_ch0 val_ch0 `f  1 a 4 92 ]
 "206
 [v main@suma_ch1 suma_ch1 `f  1 a 4 88 ]
 "202
-[v main@suma_ch0 suma_ch0 `f  1 a 4 22 ]
+[v main@suma_ch0 suma_ch0 `f  1 a 4 84 ]
 "208
-[v main@total_ch1 total_ch1 `f  1 a 4 84 ]
+[v main@total_ch1 total_ch1 `f  1 a 4 88 ]
+"207
+[v main@val_ch1 val_ch1 `f  1 a 4 84 ]
 "204
-[v main@total_ch0 total_ch0 `f  1 a 4 18 ]
+[v main@total_ch0 total_ch0 `f  1 a 4 80 ]
+"203
+[v main@val_ch0 val_ch0 `f  1 a 4 24 ]
 "213
-[v main@min min `ui  1 a 2 90 ]
+[v main@min min `ui  1 a 2 94 ]
 "212
-[v main@max max `ui  1 a 2 88 ]
-"275
+[v main@max max `ui  1 a 2 92 ]
+"214
+[v main@count count `ui  1 a 2 18 ]
+"292
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcsqrt.c
 [v _sqrt sqrt `(d  1 e 4 0 ]
@@ -147,7 +147,7 @@
 "139 C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 [v _show show `(v  1 e 1 0 ]
 {
-[v show@s s `*.26uc  1 p 2 2 ]
+[v show@s s `*.26uc  1 p 2 3 ]
 "144
 } 0
 "129
@@ -156,7 +156,7 @@
 [v dat@b b `uc  1 a 1 wreg ]
 [v dat@b b `uc  1 a 1 wreg ]
 "131
-[v dat@b b `uc  1 a 1 1 ]
+[v dat@b b `uc  1 a 1 2 ]
 "137
 } 0
 "111
@@ -170,7 +170,7 @@
 [v cmd@a a `uc  1 a 1 wreg ]
 [v cmd@a a `uc  1 a 1 wreg ]
 "121
-[v cmd@a a `uc  1 a 1 1 ]
+[v cmd@a a `uc  1 a 1 2 ]
 "127
 } 0
 "87

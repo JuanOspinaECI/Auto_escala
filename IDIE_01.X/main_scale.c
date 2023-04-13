@@ -10,7 +10,7 @@
 // 'C' source line config statements
 
 // CONFIG
-#pragma config FOSC = XT    // Oscillator Selection bits (RC oscillator)
+#pragma config FOSC = HS    // Oscillator Selection bits (RC oscillator)
 #pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
 #pragma config PWRTE = ON      // Power-up Timer Enable bit (PWRT disabled)
 #pragma config BOREN = OFF      // Brown-out Reset Enable bit (BOR disabled)
@@ -26,7 +26,7 @@
 #include <math.h>
 
 
-#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 20000000
 #define SBIT_ADON     0
 #define SBIT_CHS0     3
 #define SBIT_ADFM     7
@@ -211,22 +211,22 @@ int main()
     float offset;
     unsigned int max;
     unsigned int min;
+    unsigned int count = 1;
     //unsigned int i;
     lcd_init();
     cmd(0x8A); //forcing the cursor at 0x8A position
     show("IDIE");
     while(1)
     {
-        ADC_Init_CH0();
+        
         for(int i = 0; i<40; i++){
+            ADC_Init_CH0();
             array_ch0[i] = ADC_Read(0);
-            __delay_ms(0.416666);
-        }
-        ADC_Init_CH1();
-        for(int i = 0; i<40; i++){
+            ADC_Init_CH1();
             array_ch1[i] = ADC_Read_1(0);
-            __delay_ms(0.416666);
+            __delay_ms(0.41666);
         }
+        
         max = array_ch0[0];
         min = array_ch0[0];
         for(int i = 0; i<40; i++){
@@ -253,23 +253,40 @@ int main()
         }
         val_ch0 = 0;
         val_ch1 = 0;
-        total_ch0 = suma_ch0*60;
-        total_ch0 = sqrt(total_ch0);//*70.71;
+        if (count == 2){
+            count = 1;
+            suma_ch0 = suma_ch0*60;
+            suma_ch0 = sqrt(suma_ch0);//*70.71;
             
-        total_ch1 = suma_ch1*60;
-        total_ch1 = sqrt(total_ch1);//*70.71;
+            total_ch0 = (suma_ch0+total_ch0)/2;
+            
+            
+            cmd(0x01);
+            cmd(0x80);
+            float_LCD(total_ch0);
+            show("Vrms = ");
+            show(cadena);
+            
+            suma_ch1 = suma_ch1*60;
+            suma_ch1 = sqrt(suma_ch1);//*70.71;
+            
+            total_ch1 = (suma_ch1+total_ch1)/2;
         
-        cmd(0x01);
-        cmd(0x80);
-        float_LCD(total_ch0);
-        show("Vrms = ");
-        show(cadena);
-        float_LCD(total_ch1);
-        cmd(0xC0);
-        show("Irms = ");
-        show(cadena);
+
+            float_LCD(total_ch1);
+            cmd(0xC0);
+            show("Irms = ");
+            show(cadena);
         
-        suma_ch0 = suma_ch1 = 0;
+            suma_ch0 = suma_ch1 = 0;
+        }else {
+            count++;
+            total_ch0 = suma_ch0*60;
+            total_ch0 = sqrt(total_ch0);//*70.71;
+            
+            total_ch1 = suma_ch1*60;
+            total_ch1 = sqrt(total_ch1);//*70.71;
+        }
         
     }
 }
