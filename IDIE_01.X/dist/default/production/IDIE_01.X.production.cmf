@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
+$C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 1 2 1
 $dist/default/production\IDIE_01.X.production.o
@@ -89,16 +89,16 @@ STRING 1800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\IDIE_01.X.production.o
-7F3 cinit CODE >464:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7F3 cinit CODE >467:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7F3 cinit CODE >496:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7F4 cinit CODE >497:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7F5 cinit CODE >498:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7F6 cinit CODE >499:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7F7 cinit CODE >500:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7FC cinit CODE >506:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7FC cinit CODE >508:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-7FD cinit CODE >509:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
+7F3 cinit CODE >464:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7F3 cinit CODE >467:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7F3 cinit CODE >496:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7F4 cinit CODE >497:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7F5 cinit CODE >498:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7F6 cinit CODE >499:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7F7 cinit CODE >500:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7FC cinit CODE >506:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7FC cinit CODE >508:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+7FD cinit CODE >509:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
 1364 text20 CODE >146:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 1364 text20 CODE >148:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 1367 text20 CODE >149:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
@@ -1000,16 +1000,16 @@ A56 text1 CODE >159:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\
 782 maintext CODE >285:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 799 maintext CODE >287:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
 7D8 maintext CODE >288:C:\Users\Usuario\Documents\IDIE\MPLAB\Auto_escala\IDIE_01.X\main_scale.c
-136C clrtext CODE >483:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-136C clrtext CODE >484:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-136D clrtext CODE >485:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-136D clrtext CODE >486:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-136E clrtext CODE >487:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-136F clrtext CODE >488:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-1370 clrtext CODE >489:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-1371 clrtext CODE >490:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-1372 clrtext CODE >491:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
-1373 clrtext CODE >492:C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_1.s
+136C clrtext CODE >483:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+136C clrtext CODE >484:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+136D clrtext CODE >485:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+136D clrtext CODE >486:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+136E clrtext CODE >487:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+136F clrtext CODE >488:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+1370 clrtext CODE >489:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+1371 clrtext CODE >490:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+1372 clrtext CODE >491:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
+1373 clrtext CODE >492:C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1039,14 +1039,14 @@ __L__absolute__ 0 0 ABS 0 __absolute__ -
 main@i 160 0 BANK2 1 cstackBANK2 dist/default/production\IDIE_01.X.production.o
 delay@cnt 70 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
+___sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
 _main 21E 0 CODE 0 maintext dist/default/production\IDIE_01.X.production.o
 _show 27DE 0 CODE 0 text2 dist/default/production\IDIE_01.X.production.o
 _sqrt 1102 0 CODE 0 text1 dist/default/production\IDIE_01.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 cmd@a 72 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 dat@b 72 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
-start 0 0 CODE 0 init C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
 ___flmul@aexp 42 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 ___flmul@bexp 43 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 ___flmul@prod 44 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
@@ -1058,12 +1058,12 @@ show@s 73 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 sqrt@a 70 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 sqrt@i 21 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 sqrt@p 26 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
 sqrt@tfrac 22 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -1093,8 +1093,8 @@ __end_of___flsub 27DE 0 CODE 0 text10 dist/default/production\IDIE_01.X.producti
 __end_of___fltol 1102 0 CODE 0 text9 dist/default/production\IDIE_01.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 __end_of_ADC_Read 28CC 0 CODE 0 text17 dist/default/production\IDIE_01.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
+___stackhi 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
 main@array_ch0 190 0 BANK3 1 cstackBANK3 dist/default/production\IDIE_01.X.production.o
 main@array_ch1 110 0 BANK2 1 cstackBANK2 dist/default/production\IDIE_01.X.production.o
 ___fladd@a 74 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
@@ -1116,7 +1116,7 @@ _TRISC4 43C 0 ABS 0 - dist/default/production\IDIE_01.X.production.o
 ADC_Read_1@adcChannel 72 0 COMMON 1 cstackCOMMON dist/default/production\IDIE_01.X.production.o
 main@offset_0 6E 0 BANK0 1 cstackBANK0 dist/default/production\IDIE_01.X.production.o
 main@offset_1 B0 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
+___int_sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1179,7 +1179,7 @@ _ADC_Read_1 2760 0 CODE 0 text16 dist/default/production\IDIE_01.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 float_LCD@i A9 0 BANK1 1 cstackBANK1 dist/default/production\IDIE_01.X.production.o
 __stringtab 2000 0 STRING 0 strings dist/default/production\IDIE_01.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Usuario\AppData\Local\Temp\xcAsgo4.\driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Usuario\AppData\Local\Temp\xcAslds.\driver_tmp_12.o
 __end_of___xxtofl 21E 0 CODE 0 text8 dist/default/production\IDIE_01.X.production.o
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
 __end_of_lcd_init 2760 0 CODE 0 text4 dist/default/production\IDIE_01.X.production.o
