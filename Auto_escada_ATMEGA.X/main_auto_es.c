@@ -144,7 +144,7 @@ void lcd_init()
 void cmd(unsigned char a)
 {
     PORTD=a;
-    PORTB = (PORTB & 0b11111000) | 0b00000100;
+    PORTB = (PORTB & 0b11111000) | 0b00001100;
     //PORTC = (PORTC & 0b11110111);//rs=0;
     //PORTC = (PORTC & 0b11101111);//rw=0;
     //PORTC = (PORTC | 0b00100000);//en=1;
@@ -156,7 +156,7 @@ void cmd(unsigned char a)
 void dat(unsigned char b)
 {
     PORTD=b;
-    PORTB = (PORTB & 0b11111000) | 0b00000101;
+    PORTB = (PORTB & 0b11111000) | 0b00001101;
     //PORTB = 0b11111111;
     //PORTC = (PORTC | 0b00001000);//rs=1;
     //PORTC = (PORTC & 0b11101111);//rw=0;
@@ -164,7 +164,7 @@ void dat(unsigned char b)
     //delay(1000);
     _delay_ms(1);
     //PORTC = (PORTC & 0b11011111);//en=0;
-    PORTB = (PORTB & 0b11111000) | 0b00000001;
+    PORTB = (PORTB & 0b11111000) | 0b00001001;
 }
 
 void show(const char *s)
@@ -280,24 +280,19 @@ int main()
             total_ch1 = suma_ch1*60;
             total_ch1 = sqrt(total_ch1);//*70.71;
         }
-        DDRC = 0b1111111;
-        DDRB = 0b0000000;
-        //PORTB = (PORTB & 0b00000111) | 0b11111000;
-        //
-        //PORTC = 0b1111111;
-        //_delay_ms(100);
-        //PORTC = 0b0000000;
-        if ((PORTB & 0b0000100) == 0b0000100){
-            PORTC = 0b1111111;
+        DDRC = 0b11111100;
+        //DDRB = 0x0F;
+        if ((PINB & 0b0010000) == 0b0000000){
+        }
+        else if ((PINB & 0b0010000) == 0b0010000){
+            PORTC = 0b0000000; //Decremento PC2=0=UD 
+            PORTB = 0b00000000;// Habilitar cs = 0
+            PORTC = 0b0000100; // Increment/decremento   toogle
             _delay_ms(100);
             PORTC = 0b0000000;
+            PORTB = 0b00001000;
         }
-        else if ((PORTB & 0b1111111) == 0b0000000){
-            PORTC = 0b1111111;
-            _delay_ms(50);
-            PORTC = 0b0000000;
-        }
-        DDRD = 0xFF; // Configure PORTB and PORTD as output to display the ADC values on LEDs
-        DDRB = 0x0F;
+        //DDRD = 0xFF; // Configure PORTB and PORTD as output to display the ADC values on LEDs
+        //DDRB = 0x0F;
     }
 }
